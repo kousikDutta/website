@@ -1,0 +1,130 @@
+*{margin:0%;
+padding: 0%;
+box-sizing: border-box;}
+
+body{font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font: size 16px;
+line-height: 1.7;
+color:#777777;
+padding: 30px;
+}
+.header{
+    height:70vh;
+    background-image:
+     linear-gradient(to left bottom,
+     rgba(0, 102, 255, 0.9),
+     rgba(0, 255, 191, 0.9)),
+     url(./Img/Background.jpg);
+    background-size:cover;
+    background-position:center;
+    
+   
+}
+.text-box{padding-top: 10%;}
+
+.credits{font-size: 0.2%; color:#77777731}
+
+.heading-main{color:white;
+    font-family: 'Arima Madurai', cursive;
+letter-spacing: 10px;
+animation-name: moveinleft ;
+animation-duration: 2s;
+animation-delay: 1s;
+text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+                animation-fill-mode:backwards ;
+}
+
+
+.heading-sub{color:white;
+    font-family: 'Dekko', cursive;
+    animation-name: moveinright ;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode:backwards ;
+margin-bottom: 2rem;
+
+
+    
+    
+}
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        
+
+    }
+    
+
+    100%{opacity:1;
+   }
+
+}
+@keyframes moveinright{
+    0%{
+        opacity: 0;
+        transform: translateX(10%);
+
+    }
+    50%{transform: translatex(-10%);}
+
+    100%{opacity:1;
+    transform: translate(0);}
+
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+            }
+    
+
+    100%{opacity:1;
+    }
+
+}
+@keyframes carmoving{
+    0%{opacity: 0;
+        transform: translatex(400px) }
+     20%{opacity: 1;}
+     50%{opacity: 1;}
+     80%{opacity: 1;}
+     100%{opacity: 0;
+         transform: translatex(-400px)}
+     
+
+}
+
+   
+
+.z{animation-name: carmoving;
+ animation-duration: 4s;
+ animation-iteration-count: initial;
+ animation-delay: 3s;
+ animation-fill-mode:both ;
+}
+
+.btn:link,
+.btn:visited{text-decoration: none;
+    
+ }
+
+ .btn-white{background-color: white;
+color: rgb(99, 98, 98);
+border-radius: 1.2rem;
+transition: all;
+animation-name:appear;
+animation-duration: 3.5s;
+animation-delay: 4s;
+display: inline-block;
+animation-fill-mode:backwards ;
+font-family:'dekko' ;
+font-size: 90%;
+}
+
+.btn:hover{transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(165, 130, 130, 0.2);}
+
+.btn:active{transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);} 
